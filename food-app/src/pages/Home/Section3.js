@@ -1,5 +1,4 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
 import Image1 from "../../assets/menu/burger-11.jpg";
 import Image2 from "../../assets/menu/burger-12.jpg";
 import Image3 from "../../assets/menu/burger-13.jpg";
@@ -8,10 +7,29 @@ import Image5 from "../../assets/menu/burger-15.jpg";
 import Image6 from "../../assets/menu/burger-16.jpg";
 import Image7 from "../../assets/menu/burger-17.jpg";
 import Image8 from "../../assets/menu/burger-18.jpg";
+import { Container, Row, Col } from "react-bootstrap";
 import Cards from "../../components/Layouts/Cards";
 import { Link } from "react-router-dom";
 
-// Mock Data Cards
+const PlaceholderImage = ({ title }) => (
+  <div
+    style={{
+      width: "100%",
+      height: "250px",
+      backgroundColor: "#fde4e4",
+      display: "flex",
+      alignItems: "center",
+      justifyContent: "center",
+      borderRadius: "8px",
+      fontSize: "14px",
+      color: "#666",
+      fontWeight: "600",
+    }}
+  >
+    {title}
+  </div>
+);
+
 const mockData = [
   {
     id: "0001",
@@ -19,7 +37,7 @@ const mockData = [
     title: "Crispy Chicken",
     paragraph: "Chicken breast, chilli sauce, tomatoes, pickles, coleslaw",
     rating: 5,
-    price: 99.15,
+    price: 75,
   },
   {
     id: "0002",
@@ -27,7 +45,7 @@ const mockData = [
     title: "Ultimate Bacon",
     paragraph: "House patty, cheddar cheese, bacon, onion, mustard",
     rating: 4.5,
-    price: 99.32,
+    price: 99,
   },
   {
     id: "0003",
@@ -35,7 +53,7 @@ const mockData = [
     title: "Black Sheep",
     paragraph: "American cheese, tomato relish, avocado, lettuce, red onion",
     rating: 4,
-    price: 69.15,
+    price: 129,
   },
   {
     id: "0004",
@@ -43,7 +61,7 @@ const mockData = [
     title: "Vegan Burger",
     paragraph: "House patty, cheddar cheese, bacon, onion, mustard",
     rating: 3.5,
-    price: 99.25,
+    price: 119,
   },
   {
     id: "0005",
@@ -51,7 +69,7 @@ const mockData = [
     title: "Double Burger",
     paragraph: "2 patties, cheddar cheese, mustard, pickles, tomatoes",
     rating: 3.0,
-    price: 59.25,
+    price: 59,
   },
   {
     id: "0006",
@@ -59,7 +77,7 @@ const mockData = [
     title: "Turkey Burger",
     paragraph: "Turkey, cheddar cheese, onion, lettuce, tomatoes, pickles",
     rating: 3,
-    price: 79.18,
+    price: 79,
   },
   {
     id: "0007",
@@ -67,7 +85,7 @@ const mockData = [
     title: "Smokey House",
     paragraph: "patty, cheddar cheese, onion, lettuce, tomatoes, pickles",
     rating: 2.5,
-    price: 99.19,
+    price: 99,
   },
   {
     id: "0008",
@@ -75,12 +93,12 @@ const mockData = [
     title: "Classic Burger",
     paragraph: "cheddar cheese, ketchup, mustard, pickles, onion",
     rating: 2.0,
-    price: 89.12,
+    price: 89,
   },
-  // Add more mock data objects as needed
+
 ];
 
-// Rating Logical Data
+
 const renderRatingIcons = (rating) => {
   const stars = [];
 
@@ -105,16 +123,14 @@ function Section3() {
         <Row>
           <Col lg={{ span: 8, offset: 2 }} className="text-center mb-5">
             <h2>OUR CRAZY BURGERS</h2>
-            <p className="para">
-              Aliquam a augue suscipit, luctus neque purus ipsum neque undo
-              dolor primis libero tempus, blandit a cursus varius magna
-            </p>
+
           </Col>
         </Row>
         <Row>
           {mockData.map((cardData, index) => (
             <Cards
-              key={index}
+              key={cardData.id}
+              id={cardData.id}
               image={cardData.image}
               rating={cardData.rating}
               title={cardData.title}
@@ -125,26 +141,7 @@ function Section3() {
           ))}
         </Row>
 
-        <Row className="pt-5">
-          <Col sm={6} lg={5}>
-            <div className="ads_box ads_img1 mb-5 mb-md-0">
-              <h4 className="mb-0">GET YOUR FREE</h4>
-              <h5>CHEESE FRIES</h5>
-              <Link to="/" className="btn btn_red px-4 rounded-0">
-                Learn More
-              </Link>
-            </div>
-          </Col>
-          <Col sm={6} lg={7}>
-            <div className="ads_box ads_img2">
-              <h4 className="mb-0">GET YOUR FREE</h4>
-              <h5>CHEESE FRIES</h5>
-              <Link to="/" className="btn btn_red px-4 rounded-0">
-                Learn More
-              </Link>
-            </div>
-          </Col>
-        </Row>
+
       </Container>
     </section>
   );

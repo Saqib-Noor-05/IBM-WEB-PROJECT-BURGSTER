@@ -1,70 +1,80 @@
-# Getting Started with Create React App
+Food Delivery Web App -- BURGSTER
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+I developed this project as a food delivery website to understand how modern online ordering platforms work. The goal was to design a clean and user-friendly interface where users can browse food items, add them to a cart, and experience a simple ordering flow.
 
-## Available Scripts
+Through this project, I practiced important React concepts such as component-based architecture, Context API for state management, routing, reusable layouts, and responsive design. It helped me gain hands-on experience in building a real-world web application.
 
-In the project directory, you can run:
+Features
 
-### `npm start`
+Browse food items with images and details
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Add and manage items in the cart
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Global cart state using Context API
 
-### `npm test`
+Multiple pages including Home, Menu, and Cart
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Reusable layout components like Header, Footer, and Cards
 
-### `npm run build`
+Responsive design for different screen sizes
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Organized project structure for scalability
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Tech Stack
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Frontend: React JS
+Styling: CSS , Bootstrap
+Routing and Layout: React Components
+Build Tool: Create React App
 
-### `npm run eject`
+Project Structure
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+react-food-delivery-app/
+public/
+src/
+components/Layouts/
+context/
+pages/
+styles/
+utils/
+App.js
+index.js
+index.css
+package.json
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Getting Started
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Make sure Node.js and npm are installed on your system.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Installation:
 
-## Learn More
+cd react-food-delivery-app
+npm install
+npm start
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Open http://localhost:3001
+in your browser to view the application.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Build for Production
 
-### Code Splitting
+npm run build
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+This command creates an optimized production build inside the build folder.
 
-### Analyzing the Bundle Size
+Features :
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+User authentication system
 
-### Making a Progressive Web App
+Online payment integration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Admin panel for managing menu items
 
-### Advanced Configuration
+Future Improvement--
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Order tracking feature
 
-### Deployment
+Backend database connectivity
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+About
 
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project was created as part of my learning journey in Web development. It represents my effort to build a real-world style application. Working on this project improved my understanding of global state management, application structure, and UI development.

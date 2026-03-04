@@ -13,25 +13,18 @@ const Home = () => {
   return (
     <>
       <Layout>
-        {/* Home Section Hero Banner */}
         <Section1 />
 
-        {/* Home Section About */}
         <Section2 />
 
-        {/* Home Section Menu */}
         <Section3 />
 
-        {/* Home Section Promotion */}
         <Section4 />
 
-        {/* Home Section Shop */}
         <Section5 />
 
-        {/* Home Section Blog */}
         <Section6 />
 
-        {/* Home Section Contact */}
         <Section7 />
       </Layout>
     </>

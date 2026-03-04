@@ -14,34 +14,27 @@ function Section4() {
             <Col lg={6} className="px-5">
               <h2>Nothing brings people together like a good burger</h2>
               <p>
-                Semper lacus cursus porta primis ligula risus tempus and
-                sagittis ipsum mauris lectus laoreet purus ipsum tempor enim
-                ipsum porta justo integer ultrice aligula lectus aenean magna
-                and pulvinar purus at pretium gravida
+                Good food brings people together, creating moments of joy, laughter, and connection. At Tasty Burger, we craft every burger with fresh ingredients and rich flavors so you can enjoy unforgettable meals with the people who matter most. Whether it’s a quick bite or a group hangout, our food makes every gathering special.
               </p>
               <ul>
                 <li>
                   <p>
-                    Fringilla risus, luctus mauris orci auctor purus euismod
-                    pretium purus pretium ligula rutrum tempor sapien
-                  </p>
+                    Fresh, high-quality ingredients in every bite </p>
                 </li>
                 <li>
-                  <p>Quaerat sodales sapien euismod purus blandit</p>
+                  <p>Perfect for sharing with friends and family</p>
                 </li>
                 <li>
                   <p>
-                    Nemo ipsam egestas volute turpis dolores ut aliquam quaerat
-                    sodales sapien undo pretium a purus mauris
-                  </p>
+                    Crafted to create memorable dining experiences together</p>
+
                 </li>
               </ul>
             </Col>
           </Row>
         </Container>
-      </section>
+      </section >
 
-      {/* BG Parallax Scroll */}
       <section className="bg_parallax_scroll"></section>
     </>
   );

@@ -22,10 +22,7 @@ function Section5() {
             <Col lg={6} className="text-center text-lg-start mb-5 mb-lg-0">
               <h4>Download mobile App and</h4>
               <h2>save up to 20%</h2>
-              <p>
-                Aliquam a augue suscipit, luctus neque purus ipsum and neque
-                dolor primis libero tempus, blandit varius
-              </p>
+              <br></br><br></br>
               <Link to="/">
                 <img
                   src={StoreIOS}

@@ -1,0 +1,26 @@
+
+.filter_btn {
+  background: white;
+  border: 2px solid #fde4e4;
+  padding: 8px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 600;
+  color: #212245;
+  transition: all 0.3s ease;
+  margin: 0 5px;
+}
+
+.filter_btn:hover,
+.filter_btn.active {
+  background: #fde4e4;
+  border-color: #fde4e4;
+  color: #d10000;
+}
+
+@media (max-width: 768px) {
+  .filter_btn {
+    padding: 6px 15px;
+    font-size: 14px;
+  }
+}

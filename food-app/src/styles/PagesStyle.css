@@ -1,0 +1,78 @@
+
+.about_page,
+.shop_page,
+.blog_page,
+.contact_page,
+.menu_section {
+  padding-top: 120px !important;
+  background: linear-gradient(180deg, #f8f8f8 0%, #fafafa 100%);
+  min-height: 100vh;
+}
+
+.about_page h2,
+.shop_page h2,
+.blog_page h2,
+.contact_page h2 {
+  font-family: var(--lilita-font);
+  font-size: 2.5rem;
+  color: var(--light-red);
+  margin-bottom: 30px;
+  margin-top: 0;
+}
+
+.about_page h4,
+.shop_page h4,
+.blog_page h4,
+.contact_page h4 {
+  font-family: var(--oswald-font);
+  color: #212245;
+  font-weight: 600;
+}
+
+.about_list {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.about_list li {
+  padding: 10px 0;
+  font-size: 16px;
+  color: #666;
+  line-height: 1.6;
+}
+
+.blog_post {
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 8px;
+  border-left: 4px solid var(--light-red);
+}
+
+.blog_post h4 {
+  color: #212245;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.blog_post p {
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+  .about_page,
+  .shop_page,
+  .blog_page,
+  .contact_page {
+    padding-top: 100px !important;
+  }
+
+  .about_page h2,
+  .shop_page h2,
+  .blog_page h2,
+  .contact_page h2 {
+    font-size: 1.8rem;
+  }
+}

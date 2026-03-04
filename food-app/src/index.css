@@ -1,23 +1,19 @@
-/* Import Google Fonts (Lilita One, Oswald, Roboto) */
+
 @import url("https://fonts.googleapis.com/css2?family=Lilita+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lilita+One&family=Oswald:wght@200;300;400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lilita+One&family=Oswald:wght@200;300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
-/* Common CSS */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Root Variables */
 :root {
-  /* Fonts Family */
   --roboto-font: "Roboto", sans-serif;
   --lilita-font: "Lilita One", cursive;
   --oswald-font: "Oswald", sans-serif;
 
-  /* Colors */
   --light-black: #333;
   --light-white: #f7f7f7;
   --light-red: #e3000e;
@@ -44,7 +40,6 @@ html {
   }
 }
 
-/* Headline Tag */
 h1,
 h2,
 h3,
@@ -60,7 +55,6 @@ p {
   font-size: 16px;
 }
 
-/* Achor Tag */
 a {
   color: var(--light-black);
   text-decoration: none;
@@ -71,7 +65,6 @@ a {
   transition: all 400ms ease-in-out;
 }
 
-/* Custom Scrollbar */
 ::-webkit-scrollbar {
   width: 5px;
 }
@@ -82,7 +75,6 @@ a {
   background: var(--yellow);
 }
 
-/* Common Button */
 .order_now {
   color: var(--light-black);
   background: var(--yellow);

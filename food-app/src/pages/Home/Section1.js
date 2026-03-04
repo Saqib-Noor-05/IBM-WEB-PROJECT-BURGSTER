@@ -14,7 +14,7 @@ const Section1 = () => {
               <div className="price_badge">
                 <div className="badge_text">
                   <h4 className="h4_xs">Only</h4>
-                  <h4 className="h3_lg">$6.99</h4>
+                  <h4 className="h3_lg">₹149</h4>
                 </div>
               </div>
             </div>
@@ -24,11 +24,9 @@ const Section1 = () => {
               <h1 className="text-white">New Burger</h1>
               <h2 className="text-white">With Onion</h2>
               <p className="text-white pt-2 pb-4">
-                Feugiat primis ligula risus auctor laoreet augue egestas mauris
-                viverra tortor in iaculis pretium at magna mauris ipsum primis
-                rhoncus feugiat
+                Juicy grilled beef patty topped with melted cheese, fresh lettuce, tomato, and crispy onion rings — all packed inside a soft toasted bun for the perfect bite.
               </p>
-              <Link to="/" className="btn order_now">
+              <Link to="/menu" className="btn order_now">
                 Order Now
               </Link>
             </div>

@@ -5,24 +5,22 @@ import Pizza from "../../assets/about/pizza.png";
 import Salad from "../../assets/about/salad.png";
 import Delivery from "../../assets/about/delivery-bike.png";
 
-// Mock Data Cards
 const mockData = [
   {
     image: Pizza,
     title: "Original",
-    paragraph: `Porta semper lacus cursus, feugiat primis ultrice a ligula risus auctor an tempus feugiat dolor lacinia cubilia curae integer orci congue and metus integer primis in integer metus`,
+    paragraph: `The original recipe that started it all, crafted with care and passion.`,
   },
   {
     image: Salad,
     title: "Qualty Foods",
-    paragraph: `Porta semper lacus cursus, feugiat primis ultrice a ligula risus auctor an tempus feugiat dolor lacinia cubilia curae integer orci congue and metus integer primis in integer metus`,
+    paragraph: `The highest quality ingredients, carefully selected and prepared to perfection.`,
   },
   {
     image: Delivery,
     title: "Fastest Delivery",
-    paragraph: `Porta semper lacus cursus, feugiat primis ultrice a ligula risus auctor an tempus feugiat dolor lacinia cubilia curae integer orci congue and metus integer primis in integer metus`,
+    paragraph: `Quick and reliable delivery service to get your favorite burgers delivered right to your doorstep.`,
   },
-  // Add more mock data objects as needed
 ];
 
 function Section2() {
@@ -34,13 +32,9 @@ function Section2() {
             <Col lg={{ span: 8, offset: 2 }} className="text-center">
               <h2>The burger tastes better when you eat it with your family</h2>
               <p>
-                Porta semper lacus cursus, feugiat primis ultrice a ligula risus
-                auctor an tempus feugiat dolor lacinia cubilia curae integer
-                orci congue and metus integer primis in integer metus
+
               </p>
-              <Link to="/" className="btn order_now btn_red">
-                Explore Full Menu
-              </Link>
+
             </Col>
           </Row>
         </Container>
