@@ -27,7 +27,8 @@ function App() {
           <Route
             path="/"
             element={
-              localStorage.getItem("token") ? <Home /> : <Login />
+              <Home />
+              // localStorage.getItem("token") ? <Home /> : <Login />
             }
           />
           <Route path="/menu" element={<Menu />} />

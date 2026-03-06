@@ -55,6 +55,7 @@ npm start
 Open http://localhost:3001
 in your browser to view the application.
 
+TO login as a admin use the credentials given in adminlogin.js
 Build for Production
 
 npm run build
