@@ -12,11 +12,11 @@ const createAdmin = async (firstName, lastName, email, password) => {
             useUnifiedTopology: true,
         });
 
-        console.log('✅ MongoDB connected');
+        console.log(' MongoDB connected');
 
         const adminExists = await User.findOne({ email });
         if (adminExists) {
-            console.log('❌ Admin user already exists!');
+            console.log(' Admin user already exists!');
             await mongoose.disconnect();
             return;
         }
@@ -34,13 +34,13 @@ const createAdmin = async (firstName, lastName, email, password) => {
             isAdmin: true,
         });
 
-        console.log('✅ Admin user created successfully!');
+        console.log('Admin user created successfully!');
         console.log('Email:', email);
         console.log('Admin ID:', admin._id);
 
         await mongoose.disconnect();
     } catch (error) {
-        console.error('❌ Error:', error.message);
+        console.error(' Error:', error.message);
         process.exit(1);
     }
 };
